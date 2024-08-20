@@ -1,0 +1,114 @@
+*{
+    background-color: #f3e5d8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    max-width: 600px; /* Control the maximum width of the container */
+    background-color: #ffffff; /* Set the background color to white */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Optional: round the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    margin: 0 auto; /* Center the container */
+}
+
+
+.main img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* This rounds the corners of the image */
+        max-width: 600px; /* Adjust this value to control the maximum width of the image */
+        display: block;
+        margin: 0 auto; /* This centers the image horizontally */
+}
+
+.main h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px; /* Adjust based on the design, e.g., 28px or 36px */
+    color: #333; /* Dark gray or black color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.main h2 {
+    color: #834530;
+    font-size: 25px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.no {
+    color: #834530;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.main ul, .main li, .main ol {
+    background: transparent;
+    font-size: 13px;
+    color: #653934;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0; /* Removes default padding */
+    margin-left: 0;  /* Removes default margin */
+}
+
+ol li {
+    counter-increment: item;
+    margin-bottom: 1rem; /* Add space between list items */
+    position: relative; /* For positioning the number */
+    padding-left: 2rem; /* Space for the number */
+}
+
+ol li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 10px; /* Position the number to the left */
+    font-weight: bold;
+    font-size: 13px; /* Adjust size based on your design */
+    color: #653934; /* Customize the color */
+}
+
+.main p {
+    font-size: 13px;
+}
+
+.main h1, .main p, .main img, .main h2 {
+    background: transparent;
+}
+
+.pep_time {
+    background-color: #fff7fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 7px solid #fff7fc; /* Add a left border for emphasis */
+}
+
+.pep_time .ins {
+    margin-left: 1rem;
+    background: transparent;
+}
+
+.pep_time h3 {
+    color: #7d3f5a;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.pep_time h3, .pep_time p, .pep_time ul, .pep_time li, .pep_time img, .pep_time strong{
+    background: transparent;
+}
+
+.pep_time li {
+    font-size: 13px;
+    color: #653934;
+}
+
